@@ -1,0 +1,37 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="employeeBean" class="di.constructor.Employee">
+		<constructor-arg ref="addressBean" />
+		<constructor-arg>
+			<set>
+				<value>developer</value>
+				<value>software engineer</value>
+			</set>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>grammy</value>
+				<value>sse</value>
+				<value>carwash</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg>
+			<map>
+				<entry key="grammy" value="USA"></entry>
+				<entry key="sse" value="UK"></entry>
+				<entry key="carwash" value="worldwide"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="addressBean" class="di.constructor.Address">
+		<constructor-arg value="pune" />
+		<constructor-arg value="MH" />
+		<constructor-arg value="IN" />
+		<constructor-arg value="411019" />
+	</bean>
+	
+</beans>

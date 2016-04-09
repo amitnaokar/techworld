@@ -1,0 +1,38 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="employeeBean" class="di.setter.Employee">
+		<property name="firstName" value="amit" />
+		<property name="lastName" value="naokar" />
+		<property name="id" value="1"></property>
+		<property name="address" ref="addressBean"></property>
+		<property name="tags">
+			<set>
+				<value>developer</value>
+				<value>software engineer</value>
+			</set>
+		</property>
+		<property name="projects">
+			<list>
+				<value>grammy</value>
+				<value>sse</value>
+				<value>carwash</value>
+			</list>
+		</property>
+		<property name="projectLocations">
+			<map>
+				<entry key="grammy" value="USA"></entry>
+				<entry key="sse" value="UK"></entry>
+				<entry key="carwash" value="worldwide"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="addressBean" class="di.setter.Address">
+		<property name="city" value="Pune" />
+		<property name="state" value="MH"></property>
+		<property name="country" value="IN"></property>
+		<property name="pincode" value="411019"></property>
+	</bean>
+</beans>
