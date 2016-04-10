@@ -1,4 +1,4 @@
-package di.setter;
+package basic.di.setter;
 
 public class Address {
 	String city;

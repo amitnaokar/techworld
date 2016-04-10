@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="employeeBean" autowire="constructor" class="basic.autowire.constructor.Employee">
+        <constructor-arg>
+            <set>
+                <value>software developer</value>
+                <value>engineer</value>
+            </set>
+        </constructor-arg>
+        <constructor-arg>
+            <list>
+                <value>Skyfu</value>
+                <value>Eagree</value>
+                <value>Grammy</value>
+            </list>
+        </constructor-arg>
+        <constructor-arg>
+            <map>
+                <entry key="skyfu" value="USA"/>
+                <entry key="eagree" value="UK"/>
+                <entry key="grammy" value="EastCoast"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <bean id="addressBean" class="basic.autowire.constructor.Address">
+        <constructor-arg value="Shegaon"></constructor-arg>
+        <constructor-arg value="Maharashtra"/>
+        <constructor-arg value="India"/>
+        <constructor-arg value="444203"/>
+    </bean>
+</beans>

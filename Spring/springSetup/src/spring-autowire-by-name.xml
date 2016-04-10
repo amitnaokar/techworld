@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addressBean" class="basic.autowire.byname.Address">
+        <property name="city" value="Pune"/>
+        <property name="state" value="MH"/>
+        <property name="country" value="IN"/>
+        <property name="pincode" value="411019"/>
+    </bean>
+
+    <bean name="employeeBean" autowire="byName" class="basic.autowire.byname.Employee">
+        <property name="firstName" value="Amit"/>
+        <property name="lastName" value="Naokar"/>
+        <property name="tags">
+            <set>
+                <value>Software Engineer</value>
+                <value>Developer</value>
+            </set>
+        </property>
+        <property name="projects">
+            <list>
+                <value>Grammy</value>
+                <value>InstaKYC</value>
+                <value>Eagree</value>
+            </list>
+        </property>
+        <property name="projectLocations">
+            <map>
+                <entry key="grammy" value="USA"/>
+                <entry key="instakyc" value="India"/>
+                <entry key="eagree" value="UK"/>
+            </map>
+        </property>
+    </bean>
+</beans>

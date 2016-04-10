@@ -1,4 +1,4 @@
-package di.constructor;
+package basic.autowire.bytype;
 
 public class Address {
 	String city;
@@ -6,13 +6,6 @@ public class Address {
 	String country;
 	int pincode;
 	
-	
-	public Address(String city, String state, String country, int pincode) {
-		this.city = city;
-		this.state = state;
-		this.country = country;
-		this.pincode = pincode;
-	}
 	
 	public String getCity() {
 		return city;

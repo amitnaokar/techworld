@@ -1,4 +1,4 @@
-package di.setter;
+package basic.di.setter;
 
 import java.util.List;
 import java.util.Map;

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addressBean" class="basic.autowire.bytype.Address">
+        <property name="city" value="Pune"/>
+        <property name="state" value="Maharashtra"/>
+        <property name="country" value="India"/>
+        <property name="pincode" value="411019"/>
+    </bean>
+
+    <bean id="addressBean2" class="basic.autowire.bytype.Address">
+        <property name="city" value="Pune2"/>
+        <property name="state" value="Maharashtra2"/>
+        <property name="country" value="India2"/>
+        <property name="pincode" value="411019"/>
+    </bean>
+
+    <bean id="employeeBean" autowire="byType" class="basic.autowire.bytype.Employee">
+        <property name="firstName" value="Amit"/>
+        <property name="lastName" value="Naokar"/>
+        <property name="tags">
+            <set>
+                <value>Software Engineer</value>
+                <value>Developer</value>
+            </set>
+        </property>
+        <property name="projects">
+            <list>
+                <value>Grammy</value>
+                <value>Eagree</value>
+                <value>InstaKYC</value>
+            </list>
+        </property>
+        <property name="projectLocations">
+            <map>
+                <entry key="grammy" value="USA"/>
+                <entry key="eagree" value="UK"/>
+                <entry key="instakyc" value="IN"/>
+            </map>
+        </property>
+    </bean>
+</beans>

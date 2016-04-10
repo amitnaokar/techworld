@@ -2,7 +2,7 @@
 "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
-	<bean id="employeeBean" class="di.setter.Employee">
+	<bean id="employeeBean" class="basic.di.setter.Employee">
 		<property name="firstName" value="amit" />
 		<property name="lastName" value="naokar" />
 		<property name="id" value="1"></property>
@@ -29,7 +29,7 @@
 		</property>
 	</bean>
 
-	<bean id="addressBean" class="di.setter.Address">
+	<bean id="addressBean" class="basic.di.setter.Address">
 		<property name="city" value="Pune" />
 		<property name="state" value="MH"></property>
 		<property name="country" value="IN"></property>

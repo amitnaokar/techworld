@@ -1,4 +1,4 @@
-package di.constructor;
+package basic.autowire.byname;
 
 import java.util.List;
 import java.util.Map;
@@ -8,17 +8,10 @@ public class Employee {
 	String firstName;
 	String lastName;
 	int id;
-	Address address;
+	Address addressBean;
 	Set tags;
 	Map projectLocations;
 	List projects;
-	
-	public Employee(Address address, Set tags, List projects, Map projectLocations){
-		this.address=address;
-		this.tags=tags;
-		this.projects=projects;
-		this.projectLocations = projectLocations;
-	}
 	
 	public String getFirstName() {
 		return firstName;
@@ -39,11 +32,11 @@ public class Employee {
 		this.id = id;
 	}
 	
-	public Address getAddress() {
-		return address;
+	public Address getAddressBean() {
+		return addressBean;
 	}
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setAddressBean(Address addressBean) {
+		this.addressBean = addressBean;
 	}
 	
 	public Set getTags() {
@@ -67,7 +60,7 @@ public class Employee {
 	}
 	public String toString(){
 		return "name:"+firstName+"\t lastName:"+lastName+"\t id:"+id+"\n"+
-			   "city:"+address.city+"\t state:"+address.state+"\t country:"+address.country+"\t pincode:"+address.pincode;
+			   "city:"+ addressBean.city+"\t state:"+ addressBean.state+"\t country:"+ addressBean.country+"\t pincode:"+ addressBean.pincode;
 	}
 	
 	

@@ -3,7 +3,7 @@
 
 <beans>
 
-	<bean id="employeeBean" class="di.constructor.Employee">
+	<bean id="employeeBean" class="basic.di.constructor.Employee">
 		<constructor-arg ref="addressBean" />
 		<constructor-arg>
 			<set>
@@ -27,7 +27,7 @@
 		</constructor-arg>
 	</bean>
 	
-	<bean id="addressBean" class="di.constructor.Address">
+	<bean id="addressBean" class="basic.di.constructor.Address">
 		<constructor-arg value="pune" />
 		<constructor-arg value="MH" />
 		<constructor-arg value="IN" />
