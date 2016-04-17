@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="addressSingletonBean" name="addressSingletonBean" class="basic.di.setter.Address" scope="singleton" lazy-init="true">
+        <property name="city" value="Pune"/>
+        <property name="state" value="MH"/>
+        <property name="country" value="India"/>
+        <property name="pincode" value="411019"/>
+    </bean>
+
+    <bean id="addressPrototypeBean" name="addressPrototypeBean" class="basic.di.setter.Address" scope="prototype" lazy-init="true">
+        <property name="city" value="Pune"/>
+        <property name="state" value="MH"/>
+        <property name="country" value="India"/>
+        <property name="pincode" value="411019"/>
+    </bean>
+</beans>

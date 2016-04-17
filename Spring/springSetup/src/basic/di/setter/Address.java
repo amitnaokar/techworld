@@ -31,4 +31,8 @@ public class Address {
 		this.pincode = pincode;
 	}
 
+	@Override
+	public String toString() {
+		return "city:"+city+"\tstate:"+state+"\tcountry:"+country+"\tpincode:"+pincode;
+	}
 }
