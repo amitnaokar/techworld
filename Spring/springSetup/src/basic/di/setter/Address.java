@@ -35,4 +35,12 @@ public class Address {
 	public String toString() {
 		return "city:"+city+"\tstate:"+state+"\tcountry:"+country+"\tpincode:"+pincode;
 	}
+
+	public void init(){
+		System.out.println("Bean is going through init.");
+	}
+
+	public void destroy(){
+		System.out.println("Bean will destroy now.");
+	}
 }
