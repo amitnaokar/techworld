@@ -43,4 +43,12 @@ public class Address {
 	public void destroy(){
 		System.out.println("Bean will destroy now.");
 	}
+
+	public void defaultInit(){
+		System.out.println("Bean default init.");
+	}
+
+	public void defaultDestroy(){
+		System.out.println("Bean default destroy.");
+	}
 }

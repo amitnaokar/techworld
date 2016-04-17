@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="defaultInit" default-destroy-method="defaultDestroy" default-lazy-init="true">
 
-    <bean id="addressSingletonBean" name="addressSingletonBean" class="basic.di.setter.Address" scope="singleton"
-          init-method="init" destroy-method="destroy" lazy-init="true">
+    <bean id="addressSingletonBean" name="addressSingletonBean" class="basic.di.setter.Address" scope="singleton">
         <property name="city" value="Pune"/>
         <property name="state" value="MH"/>
         <property name="country" value="India"/>
