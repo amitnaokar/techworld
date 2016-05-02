@@ -7,3 +7,4 @@ gen
 packages
 .vs
 out
+**out**
