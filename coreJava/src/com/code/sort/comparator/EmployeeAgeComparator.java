@@ -8,7 +8,7 @@ import java.util.Comparator;
 public class EmployeeAgeComparator implements Comparator<EmployeeComparator> {
 
     @Override
-    public int compare(EmployeeComparator e1, EmployeeComparator e2){
-        return e1.getId()-e2.getId();
+    public int compare(EmployeeComparator e1, EmployeeComparator e2) {
+        return e1.getId() - e2.getId();
     }
 }

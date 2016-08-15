@@ -8,7 +8,7 @@ import java.util.Iterator;
  */
 public class ArrayListDuplicates {
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         ArrayList<String> list1 = new ArrayList<>();
         list1.add("Amit");
         list1.add("Nitin");
@@ -28,14 +28,14 @@ public class ArrayListDuplicates {
 
         System.out.println("\nlist1 containing only common elements :");
         Iterator<String> iterator = intersection.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
         System.out.println("\nlist without common elements");
         union.removeAll(intersection);
         iterator = union.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 

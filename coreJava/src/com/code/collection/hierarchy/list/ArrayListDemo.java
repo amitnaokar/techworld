@@ -21,22 +21,22 @@ public class ArrayListDemo {
         ListIterator<String> listIterator = names.listIterator();
 
         System.out.println("contents of list in normal order using listIterator are:");
-        while (listIterator.hasNext()){
+        while (listIterator.hasNext()) {
             System.out.println(listIterator.next());
         }
 
         System.out.println("\ncontents of list in reverse order using listIterator are:");
-        while (listIterator.hasPrevious()){
+        while (listIterator.hasPrevious()) {
             System.out.println(listIterator.previous());
         }
 
         System.out.println("\ncontents of list in normal order using forEach loop are:");
-        for(String name:names){
+        for (String name : names) {
             System.out.println(name);
         }
 
         System.out.println("\ncontents of list in normal order using for loop are:");
-        for(int i=0; i<names.size(); i++){
+        for (int i = 0; i < names.size(); i++) {
             System.out.println(names.get(i));
         }
     }

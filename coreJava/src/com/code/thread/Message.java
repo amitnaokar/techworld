@@ -6,8 +6,8 @@ package com.code.thread;
 public class Message {
     private String msg;
 
-    public Message(String str){
-        this.msg=str;
+    public Message(String str) {
+        this.msg = str;
     }
 
     public String getMsg() {
@@ -15,7 +15,7 @@ public class Message {
     }
 
     public void setMsg(String str) {
-        this.msg=str;
+        this.msg = str;
     }
 
 }

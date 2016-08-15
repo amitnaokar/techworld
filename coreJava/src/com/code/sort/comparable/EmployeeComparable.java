@@ -1,7 +1,5 @@
 package com.code.sort.comparable;
 
-import java.util.Comparator;
-
 /**
  * Created by Amit on 21/11/2015.
  */
@@ -10,7 +8,7 @@ public class EmployeeComparable implements Comparable<EmployeeComparable> {
     String name;
     int id;
 
-    public EmployeeComparable(String name, int id){
+    public EmployeeComparable(String name, int id) {
         this.name = name;
         this.id = id;
     }
@@ -38,7 +36,7 @@ public class EmployeeComparable implements Comparable<EmployeeComparable> {
         return name1.compareTo(name2);
     }
 
-    public String toString(){
-        return "name:"+name+"\tid:"+id;
+    public String toString() {
+        return "name:" + name + "\tid:" + id;
     }
 }

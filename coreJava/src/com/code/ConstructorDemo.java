@@ -5,11 +5,12 @@ package com.code;
  */
 public class ConstructorDemo {
     String msg;
-    private  ConstructorDemo(){
+
+    private ConstructorDemo() {
         this.msg = "Hello World";
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         ConstructorDemo demo = new ConstructorDemo();
         System.out.println(demo.msg);
     }

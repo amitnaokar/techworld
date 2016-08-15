@@ -5,9 +5,9 @@ package com.code.program;
  */
 public class Pyramid {
 
-    public static void printOddPyramid(int rows){
-        for(int i=0;i<rows;i++) {
-            if(i%2==0) {
+    public static void printOddPyramid(int rows) {
+        for (int i = 0; i < rows; i++) {
+            if (i % 2 == 0) {
                 for (int j = 0; j < rows - i; j++) {
                     System.out.print(" ");
                 }

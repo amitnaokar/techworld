@@ -13,62 +13,62 @@ public class NativeDataCollection {
     Iterator<String> stringIterator;
     Iterator<Integer> integerIterator;
 
-    public NativeDataCollection(){
+    public NativeDataCollection() {
         nameList = new ArrayList<String>();
         ageList = new ArrayList<Integer>();
     }
 
-    public void addNames(){
+    public void addNames() {
         nameList.add("Amit");
         nameList.add("Vinay");
         nameList.add("Nitin");
     }
 
-    public void addAges(){
+    public void addAges() {
         ageList.add(27);
         ageList.add(26);
         ageList.add(30);
     }
 
-    public void sortAscendingAndPrintString(){
+    public void sortAscendingAndPrintString() {
         Collections.sort(nameList);
         System.out.println("Names in Ascending order are:");
         stringIterator = nameList.iterator();
-        while (stringIterator.hasNext()){
+        while (stringIterator.hasNext()) {
             System.out.println(stringIterator.next());
         }
     }
 
-    public void sortDescendingAndPrintString(){
+    public void sortDescendingAndPrintString() {
 //        Collections.sort(nameList,Collections.reverseOrder());
         Collections.sort(nameList);
         Collections.reverse(nameList);
         System.out.println("Names in Descending order are:");
         stringIterator = nameList.iterator();
-        while (stringIterator.hasNext()){
+        while (stringIterator.hasNext()) {
             System.out.println(stringIterator.next());
         }
     }
 
-    public void sortAscendingAndPrintInteger(){
+    public void sortAscendingAndPrintInteger() {
         Collections.sort(ageList);
         integerIterator = ageList.iterator();
         System.out.println("Ages in Ascending order are:");
-        while (integerIterator.hasNext()){
+        while (integerIterator.hasNext()) {
             System.out.println(integerIterator.next());
         }
     }
 
-    public void sortDescendingAndPrintInteger(){
-        Collections.sort(ageList,Collections.reverseOrder());
+    public void sortDescendingAndPrintInteger() {
+        Collections.sort(ageList, Collections.reverseOrder());
         integerIterator = ageList.iterator();
         System.out.println("Ages in Descending order are:");
-        while (integerIterator.hasNext()){
+        while (integerIterator.hasNext()) {
             System.out.println(integerIterator.next());
         }
     }
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         NativeDataCollection collection = new NativeDataCollection();
         collection.addNames();
         collection.sortAscendingAndPrintString();

@@ -8,7 +8,7 @@ public class EmployeeComparator {
     String name;
     int id;
 
-    public EmployeeComparator(String name, int id){
+    public EmployeeComparator(String name, int id) {
         this.name = name;
         this.id = id;
     }
@@ -29,7 +29,7 @@ public class EmployeeComparator {
         this.id = id;
     }
 
-    public String toString(){
-        return "name:"+name+"\tid:"+id;
+    public String toString() {
+        return "name:" + name + "\tid:" + id;
     }
 }
